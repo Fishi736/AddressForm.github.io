@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="Form.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Address Book</h1>
+
+        <p class="lead">
+            Is permanent address same as residential address?
+        </p>
+        <div class="choice">
+            <input type="radio" name="choice" value="Yes" id="radio" onclick="disable();">
+            <label>Yes</label>
+            <input type="radio" name="choice" value="No" id="radio" onclick="enable();">
+            <label>No</label>
+        </div>
+
+        <div class= "Details">
+            <div class="f1">
+                <form name="myAddress1">
+                    <h3 for="">Residential Address</h3>
+                    <input type="text" name="state" placeholder="State" id="">
+                    <input type="text" name="city" placeholder="City" id="">
+                    <textarea name="" id="" cols="55" rows="10"></textarea>
+                <br>
+                    <button type="submit">Submit</button>
+
+
+                </form>
+            </div>
+            
+            <span class="vertical-line"></span>
+
+            <div class="f1">
+                <form action="php" id="myAddress2">
+                    <h3 for="">Permanent Address </h3>
+                    <input type="text" name="input" placeholder="State" id="">
+                    <input type="text" name="input" placeholder="City" id="">
+                    <textarea name="input" id="" cols="55" rows="10"></textarea>
+                    <br>
+                    <button type="submit" name="input" id="">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
